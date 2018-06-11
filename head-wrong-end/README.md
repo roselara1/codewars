@@ -1,15 +1,19 @@
 Problem Domain:
-You're at the zoo... all the meerkats look weird. Something has gone terribly wrong - someone has gone and switched their heads and tails around!
+ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
 
-Save the animals by switching them back. You will be given an array which will have three values (tail, body, head). It is your job to re-arrange the array so that the animal is the right way round (head, body, tail).
+If the function is passed a valid PIN string, return true, else return false.
 
-Same goes for all the other arrays/lists that you will get in the tests: you have to change the element positions with the same exact logics - simples!
+eg:
 
-Challenge Link: https://www.codewars.com/kata/my-head-is-at-the-wrong-end/train/javascript
+validatePIN("1234") === true
+validatePIN("12345") === false
+validatePIN("a234") === false
+
+Challenge Link: https://www.codewars.com/kata/regex-validate-pin-code
 
 Code Provided:
-function fixTheMeerkat(arr) {
- //your code here 
+function validatePIN (pin) {
+  //return true or false
 }
 
-My Solution: I whiteboarded with Travis. We realized we had to rearrange the array, starting with [2] and move it to [0].
+My Solution: I started to think of the previous regex we worked with to verify a username. Using the parameter of [0-9], I can check for numbers, using {4,6}, I can check for length. Then I needed an if else statement to return the true and false parameters.

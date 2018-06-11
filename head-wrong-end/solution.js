@@ -1,8 +1,7 @@
-'use strict'
-
-function fixTheMeerkat(arr) {
-    let tempVariable = arr[2];
-    arr[2] = arr[0];
-    arr[0] = tempVariable;
-    return arr;
+function validatePIN (pin) {
+    if (/^([0-9]{4}||[0-9]{6})$/.test(pin)) {
+        return true;
+      } else {
+        return false;
+      }
     }
