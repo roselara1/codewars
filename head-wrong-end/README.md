@@ -1,3 +1,4 @@
+
 Problem Domain:
 ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
 
@@ -17,3 +18,12 @@ function validatePIN (pin) {
 }
 
 My Solution: I started to think of the previous regex we worked with to verify a username. Using the parameter of [0-9], I can check for numbers, using {4,6}, I can check for length. Then I needed an if else statement to return the true and false parameters.
+
+Problem Domain: Write a regex to validate a username. Only use lowercase letters, numbers and underscore. The length should be between 4 and 16 characters.
+
+Code Given: 
+function validateUsr(username) {
+  res = //your code here
+}
+
+
