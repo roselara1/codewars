@@ -1,3 +1,24 @@
+
+Problem Domain:
+ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
+
+If the function is passed a valid PIN string, return true, else return false.
+
+eg:
+
+validatePIN("1234") === true
+validatePIN("12345") === false
+validatePIN("a234") === false
+
+Challenge Link: https://www.codewars.com/kata/regex-validate-pin-code
+
+Code Provided:
+function validatePIN (pin) {
+  //return true or false
+}
+
+My Solution: I started to think of the previous regex we worked with to verify a username. Using the parameter of [0-9], I can check for numbers, using {4,6}, I can check for length. Then I needed an if else statement to return the true and false parameters.
+
 Problem Domain: Write a regex to validate a username. Only use lowercase letters, numbers and underscore. The length should be between 4 and 16 characters.
 
 Code Given: 
@@ -6,8 +27,3 @@ function validateUsr(username) {
 }
 
 
-Kata Link: https://www.codewars.com/kata/simple-validation-of-a-username-with-regex/train/javascript
-
-
-
-Solution Explanation: First Tyler and I realized that we had to do some research on what regex was! We put together what we learned in the lecture along with what we found online to see what we could write. We first started writing 3 seperate lines: one for lowercase letters [a-z], one for numbers [0-9] and one for length (4,16). After that we worked through different solutions to see which would be best. We arrived at one that worked all but 4 times and realized we needed to make it a global scope, so the /g was added.

@@ -1,6 +1,8 @@
-'use strict'
 
-function validateUsr(username) {
-    res = /^[a-z0-9_]{4,16}$/g.test(username) 
-    return res
-  }
+function validatePIN (pin) {
+    if (/^([0-9]{4}||[0-9]{6})$/.test(pin)) {
+        return true;
+      } else {
+        return false;
+      }
+    }
