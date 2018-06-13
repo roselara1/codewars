@@ -16,4 +16,4 @@ function disemvowel(str) {
 }
 
 
-My Solution: The first thing we knew is that we had to add the vowels a,e,i,o,u to have them be removed from the string. 
+My Solution: The first thing we knew is that we had to add the vowels a,e,i,o,u to have them be removed from the string. The function should allow for a string to go in and search it globally for all versions of vowels, which means upper and lower case. For this we used "i" and for the global search we used "g".
