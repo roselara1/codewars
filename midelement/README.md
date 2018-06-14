@@ -1,14 +1,14 @@
 Problem Domain:
-Write a function named isNice/IsNice that returns "true" if an aray argument is nice, else, "false". It should also return "false" if the input array has no elements. Nice means for every value "n" in the array, there is also an element "n-1" or "n+1" in the array.
+Write a function that when given a triplet, returns the index of the numberical element between the other two elements. 
+Ex: gimme([2,3,1]) => 0
+2 fits between 1 and 3, and the index of 2 in the original is 0.
 
 
 Code Link:
-https://www.codewars.com/kata/59b844528bcb7735560000a0/solutions/javascript
+https://www.codewars.com/kata/find-the-middle-element/train/javascript
 
 Code Given:
-function isNice{
-    //code here
-    return nice
-}
+var gimme = function (inputArray) {
+};
 
-Credit: Chi helped us out as we could not get our function to solve more than half of the code by teaching us arr.includes. 
+Credit: I used MDN docs to learn about how .splice and .split work because I was unsure about which one would be best for this function. We also removed the math.floor once we saw that .splice was the better option.
