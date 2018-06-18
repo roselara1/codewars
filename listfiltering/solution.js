@@ -8,7 +8,7 @@ function filter_list(l) {
   return list;
 }
 
-Shorter solution:
+// Shorter solution:
 function filter_list(l) {
   return l.filter(i => Number.isInteger(i));
 }
