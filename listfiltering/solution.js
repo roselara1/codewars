@@ -1,8 +1,14 @@
-function solution(str){
-  let reverseArray = [];
-  const splitArray = str.split('');
-  for (var i = splitArray.length; i > 0; i--) {
-    reverseArray.push(splitArray.pop([i]));
+function filter_list(l) {
+  let list = [];
+  for (i = 0; i < l.length; i++) {
+    if (Number.isInteger(l[i]) === true) {
+      list.push(l[i]);
+    }
   }
-  return reverseArray.join('');
+  return list;
+}
+
+Shorter solution:
+function filter_list(l) {
+  return l.filter(i => Number.isInteger(i));
 }
