@@ -1,0 +1,1 @@
+double = array => array.map(i => i * 2);
