@@ -1,11 +1,13 @@
 Problem Domain: 
-Complete the provided solution so that it reverses the string value passed into it.
+Write a function average that calculates average numbers in a given list.
 
 
-Challenge Link: https://www.codewars.com/kata/reversed-strings/train/javascript
+Challenge Link: https://www.codewars.com/kata/calculate-average/
 
 Code Provided:
-solution('world'); //returns 'dlrow'
+function find_average(array) {
+    //retunr 0;
+}
 
 
-My Solution: We attempted to solve the code by not using .reverse as a challenge. Tara came up with the idea of using two arrays and splitting the first one and then joining them.
+My Solution: First I tried to use a variable, and then changed it to let as I remembered that let is the new standard. Then I worked using the same method that I used in a previous Kata, to make the function an arrow function. I used array.reduce after reading about it in Stack Overflow and divided by the array lenght to get the result.
