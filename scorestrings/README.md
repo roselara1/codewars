@@ -18,4 +18,4 @@ function high(x){
 
 
 
-My Solution: We decided to create an array that would grab the numbers. Then they would be converted into a string so that they could look through each number to find the odd ones. After that we wanted to put the dashes in, so we thought about using a for loop to traverse the numbers.
+My Solution: We first tried to use an array but that was not working with the regex that I had placed into the function. I tried going back into my previous solutions to see what regex might work best and knew that we would have to split the words so that we can get values. Finally after reading more MDN docs, we attempted to use math.max, along with a better regex that implemented a tracking of the words in the array and got values. We first tried charCodeAt but using UNICODE values. However, we could not get it to pass all the test with this. Then we switched to using the ACSII values and subtracted by 96 since a starts at 97.
