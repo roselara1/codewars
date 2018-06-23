@@ -12,4 +12,6 @@ function fixTheMeerkat(arr) {
  //your code here 
 }
 
-My Solution: I whiteboarded with Travis. We realized we had to rearrange the array, starting with [2] and move it to [0].
+My Solution: I whiteboarded with Travis. We realized we had to rearrange the array, starting with [2] and move it to [0]. 
+
+Updating file again to try to push to github.
